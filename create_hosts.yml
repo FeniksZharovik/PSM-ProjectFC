@@ -1,0 +1,12 @@
+---
+- name: Setup development host
+  hosts: development
+  tasks:
+    - name: Test development connection
+      ping:
+
+- name: Setup production host
+  hosts: production
+  tasks:
+    - name: Test production connection
+      ping:
